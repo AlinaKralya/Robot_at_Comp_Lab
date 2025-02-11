@@ -14,7 +14,18 @@ int LPval = 176, LTval = 35, LEval = 180, x = 0, RPval = 13, RTval = 117, REval 
 
 void setup() {
   // put your setup code here, to run once:
-
+  Lpan.attach(2);    // attach the servos
+  Ltilt.attach(3);
+  Lelbow.attach(4);
+  Rpan.attach(5);
+  Rtilt.attach(6);
+  Relbow.attach(7);
+  Lpan.write(LPval); // Set start positions
+  Ltilt.write(LTval);
+  Lelbow.write(LEval);
+  Rpan.write(RPval);
+  Rtilt.write(RTval);
+  Relbow.write(REval);
 }
 
 void loop() {
