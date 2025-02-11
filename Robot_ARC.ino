@@ -36,6 +36,9 @@ void wave();
 //--------------------------------------MAIN-BODY------------------------------------------
 
 void setup() {
+  
+  Serial.begin(115200); //for test purposes
+
   //Attach servos to the Board 1
   Lpan.attach(Lpan_pin);
   Ltilt.attach(Ltilt_pin);
@@ -57,7 +60,11 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  //TEST on Serial Console
+  Serial.println("Left side positions:\nLpan - " + String(LPval) + "\nLtilt - " + String(LTval) + "\nLelbow - " + String(LEval)
+  + "\n\nRight side positions:\nRpan - " + String(RPval) + "\nRtilt - " + String(RTval) + "\nRelbow - " + String(REval));
+
+  delay(500); //how long it waits until run loop once again (milliseconds)
 
 }
 
