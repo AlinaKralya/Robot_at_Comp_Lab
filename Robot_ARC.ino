@@ -33,6 +33,19 @@ int RPval = 13, RTval = 117, REval = 2;
 void wave();
 
 
+/* 
+ *  WHERE DO THE HANDS GO?
+ *  
+ *  Lpan: -LPval (foward) and +LPval(back)
+ *  Ltilt: -LTval (in) and +LTval(out)
+ *  Lelbow: -LEval (up) and +EPval(down)
+ *  
+ *  Rpan: -RPval (back) and +RPval(forward)
+ *  Rtilt: -RTval (out) and +RTval(in)
+ *  Relbow: -REval (down) and +REval(up)
+ *  
+ */
+
 //--------------------------------------MAIN-BODY------------------------------------------
 
 void setup() {
